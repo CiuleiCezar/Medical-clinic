@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Add user</title>
+    <script src = "Scripts/loadMenuAdmin.js"></script>
+    <script src = "Scripts/adminAddUser.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Medical Clinic</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" id="addUser">Add User <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#" id="viewUser">View User<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="#" id="specialization">Specialization<span class="sr-only"></span></a>
+            </li>    
+
+            <li class="nav-item active">
+                <a class="nav-link" href="#" id="logout">Logout<span class="sr-only"></span></a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="register-photo">
+        <div class="form-container">
+            <form method="post">
+            
+                <h2 class="text-center"><strong>Create</strong> an account.</h2>
+
+            <div class = "form-row">
+              <div class="form-group col-md-6"><input class="form-control" type="text" name="username" id="username" placeholder="Username"></div>     
+             
+              <div class="form-group col-md-6">
+                <select id="inputState" class="form-control">
+                  <option value="" disabled selected>Select Specialization</option>
+                   <option>Cardiologie</option>
+                   <option>Aici trebuie adus de pe backend toate specializarile si puse</option>
+                 </select>
+               </div>
+            </div>
+              
+
+            <div class = "form-row">
+                <div class="form-group col-md-6"><input class="form-control" type="password" name="password" id="password", placeholder="Password"></div>
+                <div class="form-group col-md-6"><input class="form-control" type="password" name="password-repeat" placeholder="Password (repeat)"></div>
+            </div>
+            
+            <div class = "form-row">
+
+                <div class="form-group col-md-6"><input class="form-control" type="text" name="firstName" id="firstName" placeholder="First Name"></div>
+                <div class="form-group col-md-6"><input class="form-control" type="text" name="lastName" id="lastName" placeholder="Last Name"></div>
+                <div class="form-group col-md-6"><input class="form-control" type="text" name="email" id="email" placeholder="Email"></div>
+                <div class="form-group col-md-6"><input class="form-control" type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number"></div>
+
+                <div class="form-group col-md-6">
+                 <select id="inputState" class="form-control">
+                    <option selected>Medic</option>
+                    <option>Asistent</option>
+                  </select>
+                </div>
+                  <div class="form-group col-md-6"><input class="form-control" type="text" name="information" id="information" placeholder="Information"></div>
+                  <div class="form-group col-md-6"><input class="form-control" type="text" name="room" id="room" placeholder="Room"></div>
+                  <div class="form-group col-md-6"><input class="form-control" type="text" name="salary" id="salary" placeholder="Salary"></div>
+            </div>
+
+                <div class="form-group"><button class="btn btn-primary btn-block" type="submit" id = "signUp">Sign Up</button></div></form>
+
+            </div>
+    </div>
+
+           
+    <footer>
+      <div class="text-center">
+          <p>
+              Logged in as medic
+          </p>
+      </div>
+  </footer>
+
+
+</body>
+
+</html>
